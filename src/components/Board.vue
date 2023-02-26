@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useCellStore } from '../stores/cell'
+import BoardMenu from './BoardMenu.vue'
 import Cell from './Cell.vue'
 
 const store = useCellStore()
@@ -7,10 +8,8 @@ const store = useCellStore()
 
 <template>
   <section class="flex flex-col items-center gap-10">
-    <header class="w-full h-16 bg-slate-50 flex justify-around">
-      <span class="h-16 leading-[4rem] text-2xl text-slate-800">SwitchArray</span>
-      <a class="h-16 text-slate-800 leading-[4rem]" href="https://github.com" target="blank">GitHub</a>
-    </header>
+    <board-menu />
+
     <h1 class="text-slate-800 text-4xl">
       <template v-if="store.accomplished">
         You did it in {{ store.steps }} steps
