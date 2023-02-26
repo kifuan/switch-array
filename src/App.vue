@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import Cell from './components/Cell.vue';
-
+import Cell from './components/Cell.vue'
 </script>
 
 <template>
-  <Cell />
+  <cell />
 </template>
