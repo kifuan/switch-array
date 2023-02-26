@@ -18,6 +18,7 @@ const store = useCellStore()
         Steps: {{ store.steps }}
       </template>
     </h1>
+
     <div class="border-2 border-slate-100 grid-cols-3 grid-rows-3 inline-grid">
       <cell
         v-for="index in 9"

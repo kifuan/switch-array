@@ -9,7 +9,7 @@ const store = useCellStore()
 
 <template>
   <div
-    class="w-32 h-32 border-solid border-2 border-slate-100 flex justify-center items-center cursor-pointer"
+    class="w-28 h-28 border-solid border-2 border-slate-100 flex justify-center items-center cursor-pointer"
     @click="store.toggle(index)"
   >
     <transition name="bounce">
