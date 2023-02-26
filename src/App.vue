@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import Cell from './components/Cell.vue'
+import Board from './components/Board.vue'
 </script>
 
 <template>
-  <cell />
+  <board />
 </template>

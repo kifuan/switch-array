@@ -1,17 +1,23 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { useCellStore } from '../stores/cell'
 
-const shown = ref(true)
+const { index } = defineProps<{
+  index: number
+}>()
+const store = useCellStore()
 </script>
 
 <template>
-  <p class="w-32 h-32 border-solid border-2 border-slate-100" @click="shown = !shown">
+  <div
+    class="w-32 h-32 border-solid border-2 border-slate-100 flex justify-center items-center cursor-pointer"
+    @click="store.toggle(index)"
+  >
     <transition name="bounce">
-      <div v-show="shown">
+      <div v-show="store.active[index]" class="text-7xl font-light text-sky-500">
         O
       </div>
     </transition>
-  </p>
+  </div>
 </template>
 
 <style scoped>
