@@ -4,9 +4,9 @@ const store = useCellStore()
 </script>
 
 <template>
-  <h1 class="text-slate-800 text-3xl">
+  <h1 class="text-slate-800 text-4xl">
     <template v-if="store.accomplished">
-      You did it in {{ store.steps }} steps
+      Finished in {{ store.steps }} steps
     </template>
     <template v-else>
       Steps: {{ store.steps }}
