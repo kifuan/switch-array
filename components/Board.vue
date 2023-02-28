@@ -1,8 +1,5 @@
 <script setup lang="ts">
-import { useCellStore } from '../stores/cell'
-import BoardMenu from './BoardMenu.vue'
-import Cell from './Cell.vue'
-
+import { useCellStore } from '~/stores/cell'
 const store = useCellStore()
 </script>
 

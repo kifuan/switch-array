@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useCellStore } from '../stores/cell'
+import { useCellStore } from '~/stores/cell'
 
 const { index } = defineProps<{
   index: number
