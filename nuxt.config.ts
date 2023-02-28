@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   modules: ['@pinia/nuxt', '@nuxtjs/tailwindcss'],
   app: {
+    baseURL: '/switch-array/',
     head: {
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/icon.svg' }
