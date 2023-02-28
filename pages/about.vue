@@ -17,7 +17,7 @@
       To change only (1, 1), determine the minimum number of times.
     </p>
     <p class="text-md">
-      P.S. Clicking the logo on the header to go back.
+      P.S. Click the logo on the header to go back.
     </p>
   </div>
 </template>
