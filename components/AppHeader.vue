@@ -8,7 +8,7 @@
       <a class="h-16 text-slate-800 leading-[4rem]" href="https://github.com/kifuan/switch-array" target="_blank">
         GitHub
       </a>
-      <nuxt-link to="/about" class="h-16 text-slate-800 leading-[4rem]" href="https://github.com/kifuan/switch-array#SwitchArray">
+      <nuxt-link to="/about" class="h-16 text-slate-800 leading-[4rem]">
         About
       </nuxt-link>
     </div>
