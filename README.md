@@ -1,6 +1,6 @@
 # SwitchArray
 
-A math question appeared in a recent major examination in China.
+A math question appeared in a recent major exam for senior high schools in China.
 
 ![Question](./public/question.jpg)
 

@@ -4,7 +4,7 @@
       About
     </h1>
     <p class="text-lg">
-      A math question appeared in a recent major examination in China.
+      A math question appeared in a recent major exam for senior high schools in China.
     </p>
     <img class="h-auto w-full" src="/question.jpg" alt="Question">
     <p class="text-lg">
