@@ -2,7 +2,7 @@
 
 A math question appeared in a recent major examination in China.
 
-![Question](./question.jpg)
+![Question](./public/question.jpg)
 
 Simple translation: 
 
