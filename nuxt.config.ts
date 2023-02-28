@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/switch-array/',
     head: {
+      title: 'SwitchArray',
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/icon.svg' },
       ],
