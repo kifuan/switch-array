@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     head: {
       title: 'SwitchArray',
       link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/icon.svg' },
+        { rel: 'icon', type: 'image/svg+xml', href: '/switch-array/icon.svg' },
       ],
     },
   },
