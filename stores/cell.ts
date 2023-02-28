@@ -6,7 +6,7 @@ import { defineStore } from 'pinia'
  * |3|4|5|
  * |6|7|8|
  */
-const strategy: Record<number, number[]> = {
+const strategies: Record<number, number[]> = {
   0: [0, 1, 3],
   1: [0, 1, 2, 4],
   2: [1, 2, 5],
@@ -31,7 +31,7 @@ export const useCellStore = defineStore('cell', {
         return
 
       this.steps++
-      strategy[index].forEach(i => this.active[i] = !this.active[i])
+      strategies[index].forEach(i => this.active[i] = !this.active[i])
     },
   },
   getters: {
