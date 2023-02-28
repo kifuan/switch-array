@@ -5,9 +5,9 @@ export default defineNuxtConfig({
     baseURL: '/switch-array/',
     head: {
       link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/icon.svg' }
-      ]
-    }
+        { rel: 'icon', type: 'image/svg+xml', href: '/icon.svg' },
+      ],
+    },
   },
   tailwindcss: {
     configPath: '~/tailwind.config.js',

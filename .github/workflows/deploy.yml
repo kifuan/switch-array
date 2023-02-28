@@ -26,7 +26,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-          cache: 'pnpm'
+          cache: pnpm
 
       - name: Install & Generate
         run: pnpm install && pnpm generate
@@ -35,7 +35,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./dist/
-      
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1

@@ -7,14 +7,17 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
-  "devDependencies": {
-    "@nuxtjs/tailwindcss": "^6.4.1",
-    "@types/node": "^18.14.2",
-    "nuxt": "^3.2.2"
-  },
   "dependencies": {
     "@pinia/nuxt": "^0.4.7",
     "pinia": "^2.0.32"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.35.3",
+    "@nuxtjs/tailwindcss": "^6.4.1",
+    "@types/node": "^18.14.2",
+    "eslint": "^8.35.0",
+    "nuxt": "^3.2.2",
+    "typescript": "^4.9.5"
   },
   "pnpm": {
     "peerDependencyRules": {
