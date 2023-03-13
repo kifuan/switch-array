@@ -13,7 +13,7 @@ const store = useCellStore()
     @click="store.toggle(index)"
   >
     <transition name="bounce">
-      <div v-show="store.active[index]" class="text-7xl font-light text-sky-500">
+      <div v-show="store.status[index]" class="text-7xl font-light text-sky-500">
         O
       </div>
     </transition>

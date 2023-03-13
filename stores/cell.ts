@@ -21,8 +21,9 @@ const strategies: Record<number, number[]> = {
 export const useCellStore = defineStore('cell', {
   state: () => {
     return {
-      active: Array.from({ length: 9 }).map(() => false) as boolean[],
+      status: Array.from({ length: 9 }).fill(false) as boolean[],
       steps: 0,
+      expectedActive: [0],
     }
   },
   actions: {
@@ -31,14 +32,17 @@ export const useCellStore = defineStore('cell', {
         return
 
       this.steps++
-      strategies[index].forEach(i => this.active[i] = !this.active[i])
+      for (const i of strategies[index])
+        this.status[i] = !this.status[i]
     },
   },
   getters: {
     accomplished(): boolean {
-      return this.active[0] && (
-        this.active.reduce((a, b) => a + Number(b), 0) === 1
-      )
+      return this.status.every((val, index) => {
+        if (this.expectedActive.includes(index))
+          return val
+        return !val
+      })
     },
   },
 })
