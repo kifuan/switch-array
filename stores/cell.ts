@@ -21,7 +21,7 @@ const strategies: Record<number, number[]> = {
 export const useCellStore = defineStore('cell', {
   state: () => {
     return {
-      status: Array.from({ length: 9 }).fill(false) as boolean[],
+      status: Array(9).fill(false) as boolean[],
       steps: 0,
       expectedActive: [0],
     }
